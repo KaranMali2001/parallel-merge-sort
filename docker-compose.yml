@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  merge-sort:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: merge-sort
+
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2048M
+        reservations:
+          cpus: '0.25'
+          memory: 250M
