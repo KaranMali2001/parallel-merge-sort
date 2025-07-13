@@ -9,4 +9,4 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=build /app/merge-sort .
 
-CMD ["./merge-sort", "1000"]
+CMD ["./merge-sort"]
